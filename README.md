@@ -12,5 +12,5 @@ Solution: This solution uses the numpy library. The program creates a sequential
 
 Challenge: Rejection sampling is a useful method for generating random samples from a distribution f(x) that may be hard to sample from. The idea is to generate samples from a known distribution g(x), and then either to accept or reject the samples. Use the uniform density on the unit interval as a candidate density to generate samples from the beta distribution.
 
-Solution: 
+Solution: The code uses the uniform distribution as our candidate g(x) to sample from the distribution of interest f(x). This code uses a variant of rejection sampling known as "Empirical Supremum Rejection Sampling", which interatively updates the constant C based on the ratio of f(x) and g(x).
 
